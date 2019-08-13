@@ -15,5 +15,5 @@ If you are building your code for production
 # Bundle app source
 COPY . .
 
-EXPOSE 8080
-CMD [ "node", "server.js" ]
+EXPOSE 4040
+CMD [ "node", "index.js" ]
