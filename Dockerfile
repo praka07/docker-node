@@ -11,10 +11,10 @@ COPY package*.json ./
 #RUN npm install
 #If you are building your code for production
 # RUN npm ci --only=production
-RUN npm i forever
+#RUN npm i forever
 
 #Bundle app source
 COPY --chown=node:node . .
 
 EXPOSE 4040
-CMD [ "forever", "index.js" ]
+CMD [ "node", "index.js" ]
