@@ -16,4 +16,5 @@ COPY package*.json ./
 COPY . .
 
 EXPOSE 4040
+CMD [ "npm", "stop" ]
 CMD [ "npm", "start" ]
