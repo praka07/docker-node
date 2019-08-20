@@ -8,7 +8,7 @@ node {
    }
    stage('Run containter on unix server'){
       
-       def runImage='docker run --rm:false: -p 4040:4040 -d --name prakash-container prakash'
+       def runImage='docker run --rm=false:prakash-container  -p 4040:4040 -d --name prakash-container prakash'
        sh "${runImage}"
    }
 }
