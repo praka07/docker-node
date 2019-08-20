@@ -1,6 +1,7 @@
 node {
    stage('pull latest code'){
-     git credentialsId: '222a2c4b-d3ae-4967-82e7-5b1985cae479', url: 'git@github.com:praka07/docker-node.git'
+    // git credentialsId: '222a2c4b-d3ae-4967-82e7-5b1985cae479', url: 'git@github.com:praka07/docker-node.git'
+      checkout scm
      }
     stage('build docker image'){
        sh 'docker build -t prakash .'
