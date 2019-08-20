@@ -3,7 +3,7 @@ var http = require('http'); // 1 - Import Node.js core module
 
 var server = http.createServer(function (req, res) {   
 res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.end('not pulled');
+  res.end('i am worked');
 });
 
 server.listen(4040); //3 - listen for any incoming requests
