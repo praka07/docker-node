@@ -10,7 +10,6 @@ node {
       sh 'docker stop prakash-container || true && docker rm prakash-container || true'
    }
    stage('Run containter on unix server'){
-      
        def runImage='docker run --rm -p 4040:4040 -d --name prakash-container prakash'
        sh "${runImage}"
    }
