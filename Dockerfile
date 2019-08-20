@@ -11,10 +11,10 @@ COPY package*.json ./
 #RUN npm install
 #If you are building your code for production
 # RUN npm ci --only=production
+RUN npm install -g nodemon
 
 #Bundle app source
 COPY . .
 
 EXPOSE 4040
-CMD [ "npm", "stop" ]
-CMD [ "npm", "start" ]
+CMD [ "nodemon", "index.js" ]
