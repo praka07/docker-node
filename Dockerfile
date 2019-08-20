@@ -16,4 +16,4 @@ COPY package*.json ./
 COPY . .
 
 EXPOSE 4040
-CMD [ "node", "index.js" ]
+CMD [ "npm", "start" ]
