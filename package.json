@@ -4,7 +4,9 @@
   "description": "practice doker",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "forever start index.js",
+      "stop": "forever stopall"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/praka07/docker-node/issues"
   },
-  "homepage": "https://github.com/praka07/docker-node#readme"
+  "homepage": "https://github.com/praka07/docker-node#readme",
+   "dependencies": {
+      "forever": "^1.0.0"
+   }
 }
