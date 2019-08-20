@@ -14,7 +14,7 @@ COPY package*.json ./
 #RUN npm i forever
 
 #Bundle app source
-COPY --chown=node:node . .
+COPY . .
 
 EXPOSE 4040
 CMD [ "node", "index.js" ]
