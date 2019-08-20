@@ -7,7 +7,7 @@ node {
        sh 'docker build -t prakash .'
    }
    stage('run image'){
-       def runImage='docker run -p 4040:4040 -d prakash'
+       def runImage='docker run -p 4040:4040 -d --name prakash'
        sh "${runImage}"
    }
 }
